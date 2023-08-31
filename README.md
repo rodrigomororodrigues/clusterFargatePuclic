@@ -10,6 +10,9 @@ Account Aws,
 Terraform Workspace API Secrets (Terradorm Cloud)
 Azure Devops – Boards –TaskList Organization
 
+Note: In the task definition replace the image with the React/Node made application in Docker and push it in
+Your AWS ECR (Private Container Registry AWS) docker
+
 
 
 ![Alt text](image.png)
