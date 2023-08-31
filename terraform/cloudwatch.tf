@@ -5,7 +5,7 @@ variable "logs_retention_in_days" {
 }
 
 resource "aws_cloudwatch_log_group" "awslogs" {
-  # name = "toptal-app"
+  # name = "morofargate-app"
   name              = "/fargate/service/${var.cloudwatch_group}"
   retention_in_days = var.logs_retention_in_days
   tags = {
@@ -15,7 +15,7 @@ resource "aws_cloudwatch_log_group" "awslogs" {
 }
 
 resource "aws_cloudwatch_log_group" "awslogsweb" {
-  # name = "toptal-app"
+  # name = "morofargate-app"
   name              = "/fargate/service/${var.cloudwatch_web_group}"
   retention_in_days = var.logs_retention_in_days
   tags = {

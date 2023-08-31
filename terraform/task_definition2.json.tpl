@@ -1,7 +1,7 @@
 [
    {
       "essential": true,
-      "name":"toptal-app-web",
+      "name":"morofargate-app-web",
       "image":"191819532958.dkr.ecr.us-east-2.amazonaws.com/web:latest", 
       "portMappings":[
          {
@@ -21,7 +21,7 @@
       "environment":[
       
          {
-            "name":"toptal_app_home",
+            "name":"morofargate_app_home",
             "value":"/opt/app/"  
          },
          {

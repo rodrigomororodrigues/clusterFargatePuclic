@@ -4,6 +4,6 @@ resource "aws_db_subnet_group" "db_subnet_group" {
   subnet_ids = aws_subnet.private_subnets.*.id
 
   tags = {
-    Name = "toptal-postgres-db-subnet"
+    Name = "morofargate-postgres-db-subnet"
   }
 }

@@ -8,7 +8,7 @@ resource "aws_subnet" "public_subnets" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "toptal-docker-tf-public-${count.index + 1}"
+    Name = "morofargate-docker-tf-public-${count.index + 1}"
   }
 }
 
@@ -21,6 +21,6 @@ resource "aws_subnet" "private_subnets" {
   availability_zone = data.aws_availability_zones.azs.names[count.index]
 
   tags = {
-    Name = "toptal-docker-tf-private-${count.index + 1}"
+    Name = "morofargate-docker-tf-private-${count.index + 1}"
   }
 }

@@ -12,7 +12,7 @@ resource "aws_route_table" "rt_public" {
   }
 
   tags = {
-    Name = "toptal-docker-rt-public"
+    Name = "morofargate-docker-rt-public"
   }
 }
 
@@ -20,6 +20,6 @@ resource "aws_default_route_table" "rt_private_default" {
   default_route_table_id = aws_vpc.vpc.default_route_table_id
 
   tags = {
-    Name = "toptal-docker-rt-private-default"
+    Name = "morofargate-docker-rt-private-default"
   }
 }

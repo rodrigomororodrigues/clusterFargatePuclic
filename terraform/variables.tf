@@ -41,7 +41,7 @@ variable "rds_instance_type" {
 # Change database-1 to postgres
 variable "rds_identifier" {
   description = "db identifier"
-  default     = "toptalpostgres"
+  default     = "morofargatepostgres"
 }
 variable "rds_storage_type" {
   description = "db storage type"
@@ -65,8 +65,8 @@ variable "rds_database_name" {
   default     = "postgresdb"
 }
 variable "rds_username" {
-  description = "db username toptal"
-  default     = "toptaluser"
+  description = "db username morofargate"
+  default     = "morofargateuser"
 }
 variable "rds_password" {
   description = "db password"
@@ -76,83 +76,83 @@ variable "rds_final_snapshot_identifier" {
   description = "db final snapshot identifier"
   default     = "worker-final"
 }
-variable "toptal_app_port" {
+variable "morofargate_app_port" {
   description = "Port exposed by the node application"
   default = 3001
 }
 
-variable "toptal_app_web_port" {
+variable "morofargate_app_web_port" {
   description = "Port exposed by the node application"
   default = 80
 }
-variable "toptal_app_image" {
-  description = "Dockerhub image for toptal-api"
+variable "morofargate_app_image" {
+  description = "Dockerhub image for morofargate-api"
   default = "docker.io/****/191819532958.dkr.ecr.us-east-1.amazonaws.com/api:latest"
 }
 
 # revisar image --web--
-variable "toptal_app_web_image" {
-  description = "Dockerhub image for toptal-web"
+variable "morofargate_app_web_image" {
+  description = "Dockerhub image for morofargate-web"
   default = "docker.io/****/191819532958.dkr.ecr.us-east-1.amazonaws.com/web:latest"
 }
-variable "toptal_app" {
-  description = "Toptal APP variable"
+variable "morofargate_app" {
+  description = "morofargate APP variable"
   default = "api"
 }
 # variable --web--
-variable "toptal_web_app" {
-  description = "Toptal APP variable"
+variable "morofargate_web_app" {
+  description = "morofargate APP variable"
   default = "web"
 }
-variable "toptal_env" {
+variable "morofargate_env" {
   description = "Node ENV variable"
   default = "dev"
 }
 
 #var --web--
-variable "toptal_web_env" {
+variable "morofargate_web_env" {
   description = "Node ENV variable"
   default = "dev"
 }
-variable "toptal_app_home" {
+variable "morofargate_app_home" {
   description = "APP HOME variable"
   default = "/opt/app/"
 }
 
 # home --web--
-variable "toptal_app_web_home" {
+variable "morofargate_app_web_home" {
   description = "APP HOME variable"
   default = "/opt/app/"
 }
 variable "ecs_task_definition_name" {
-  description = "Deployment Application Toptal to Ecs Cluster API"
+  description = "Deployment Application morofargate to Ecs Cluster API"
   type = string
-  default = "toptal-app"
+  default = "morofargate-app"
 }
 
 variable "ecs_task_definition_name_web" {
-  description = "Deployment Application Toptal to Ecs Cluster" # new variable web-app
+  description = "Deployment Application morofargate to Ecs Cluster" # new variable web-app
   type = string
-  default = "toptal-app-web"
+  default = "morofargate-app-web"
 }
 
 variable "cloudwatch_group" {
-  description = "CloudWatch App Toptal App"
+  description = "CloudWatch App morofargate App"
   type = string
-  default = "toptal-app-api"  
+  default = "morofargate-app-api"  
 } 
 
 variable "cloudwatch_web_group" {
-  description = "CloudWatch App Toptal App"
+  description = "CloudWatch App morofargate App"
   type = string
-  default = "toptal-web-app"  
+  default = "morofargate-web-app"  
 } 
 
 
 variable "CLOUDWATCH_WEB_GROUP" {
-  description = "CloudWatch App Toptal App"
+  description = "CloudWatch App morofargate App"
   type = string
-  default = "toptal-web-app"  
+  default = "morofargate-web-app"  
 } 
 variable "health_check_path" {
   description = "Http path for task health check"

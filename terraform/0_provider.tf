@@ -23,7 +23,7 @@ provider "aws" {
 }
 
 # random string for flask secret-key env variable
-resource "random_string" "toptal-secret-key" {
+resource "random_string" "morofargate-secret-key" {
   length = 16
   special = true
   override_special = "/@\" "

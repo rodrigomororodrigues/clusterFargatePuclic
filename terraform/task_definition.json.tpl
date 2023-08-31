@@ -1,7 +1,7 @@
 [
    {
       "essential": true,
-      "name":"toptal-app-api",
+      "name":"morofargate-app-api",
       "image":"191819532958.dkr.ecr.us-east-2.amazonaws.com/api:latest", 
       "portMappings":[
          {
@@ -36,11 +36,11 @@
             "value":"${POSTGRES_DATABASE}"
          },
          {
-            "name":"TOPTAL_APP",
+            "name":"morofargate_APP",
             "value":"api"
          },
          {
-            "name":"TOPTAL_env",
+            "name":"morofargate_env",
             "value":"dev"
          },
          {

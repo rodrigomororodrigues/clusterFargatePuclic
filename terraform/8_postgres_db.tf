@@ -30,6 +30,6 @@ resource "aws_db_instance" "rds_instance" {
   backup_retention_period = 1
 
   tags = {
-    Name = "toptal-postgres-rds"
+    Name = "morofargate-postgres-rds"
   }
 }
